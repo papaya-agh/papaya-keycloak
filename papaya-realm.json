@@ -1,0 +1,125 @@
+{
+  "id": "papaya",
+  "realm": "papaya",
+  "enabled": true,
+  "sslRequired": "none",
+  "registrationAllowed": true,
+  "requiredCredentials": [
+    "password"
+  ],
+  "users": [
+    {
+      "username": "heinz",
+      "enabled": true,
+      "email": "heinz.d@evil.inc",
+      "firstName": "Heinz",
+      "lastName": "Doofensmirtz",
+      "credentials": [
+        {
+          "type": "password",
+          "value": "heinz"
+        }
+      ],
+      "realmRoles": [
+        "user"
+      ],
+      "clientRoles": {
+        "account": [
+          "view-profile",
+          "manage-account"
+        ]
+      }
+    },
+    {
+      "username": "peter",
+      "enabled": true,
+      "email": "peter.griffin@hot-mail.com",
+      "firstName": "Peter",
+      "lastName": "Griffin",
+      "credentials": [
+        {
+          "type": "password",
+          "value": "peter"
+        }
+      ],
+      "realmRoles": [
+        "user"
+      ],
+      "clientRoles": {
+        "account": [
+          "view-profile",
+          "manage-account"
+        ]
+      }
+    },
+    {
+      "username": "rick",
+      "enabled": true,
+      "email": "rick.c137@sanchez.es",
+      "firstName": "Rick",
+      "lastName": "Sanchez",
+      "credentials": [
+        {
+          "type": "password",
+          "value": "rick"
+        }
+      ],
+      "realmRoles": [
+        "user"
+      ],
+      "clientRoles": {
+        "account": [
+          "view-profile",
+          "manage-account"
+        ]
+      }
+    },
+    {
+      "username": "papaya-cli",
+      "enabled": true,
+      "email": "",
+      "firstName": "",
+      "lastName": "",
+      "credentials": [
+        {
+          "type": "password",
+          "value": "papaya"
+        }
+      ],
+      "realmRoles": [
+        "user"
+      ],
+      "clientRoles": {
+        "realm-management": [
+          "view-users"
+        ]
+      }
+    }
+  ],
+  "roles": {
+  },
+  "clients": [
+    {
+      "clientId": "papaya-web",
+      "enabled": true,
+      "publicClient": true,
+      "directAccessGrantsEnabled": true,
+      "redirectUris": [
+        "*"
+      ],
+      "webOrigins": [
+        "*"
+      ]
+    }
+  ],
+  "clientScopeMappings": {
+    "account": [
+      {
+        "client": "papaya-web",
+        "roles": [
+          "view-profile"
+        ]
+      }
+    ]
+  }
+}
