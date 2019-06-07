@@ -9,9 +9,10 @@
   ],
   "users": [
     {
+      "id": "f9bc3641-f7f4-41fd-a66b-10227c06dec8",
       "username": "heinz",
       "enabled": true,
-      "email": "heinz.d@evil.inc",
+      "email": "heinz.d@example.com",
       "firstName": "Heinz",
       "lastName": "Doofensmirtz",
       "credentials": [
@@ -31,9 +32,10 @@
       }
     },
     {
+      "id": "0d2dc359-8f6d-4121-97db-d8d305ff1fa6",
       "username": "peter",
       "enabled": true,
-      "email": "peter.griffin@hot-mail.com",
+      "email": "peter.griffin@example.com",
       "firstName": "Peter",
       "lastName": "Griffin",
       "credentials": [
@@ -53,15 +55,62 @@
       }
     },
     {
+      "id": "eb005f3f-216b-4b16-91fb-d30cbe169697",
       "username": "rick",
       "enabled": true,
-      "email": "rick.c137@sanchez.es",
+      "email": "rick.c137@example.com",
       "firstName": "Rick",
       "lastName": "Sanchez",
       "credentials": [
         {
           "type": "password",
           "value": "rick"
+        }
+      ],
+      "realmRoles": [
+        "user"
+      ],
+      "clientRoles": {
+        "account": [
+          "view-profile",
+          "manage-account"
+        ]
+      }
+    },
+    {
+      "id": "e266cbf0-cd63-425d-9a34-cad121a3e2ee",
+      "username": "test1",
+      "enabled": true,
+      "email": "test1@example.com",
+      "firstName": "Test",
+      "lastName": "First",
+      "credentials": [
+        {
+          "type": "password",
+          "value": "test1"
+        }
+      ],
+      "realmRoles": [
+        "user"
+      ],
+      "clientRoles": {
+        "account": [
+          "view-profile",
+          "manage-account"
+        ]
+      }
+    },
+    {
+      "id": "a1513ed8-b4cc-44ae-a816-2bda302f1d80",
+      "username": "test2",
+      "enabled": true,
+      "email": "test2@example.com",
+      "firstName": "Test",
+      "lastName": "Second",
+      "credentials": [
+        {
+          "type": "password",
+          "value": "test2"
         }
       ],
       "realmRoles": [
